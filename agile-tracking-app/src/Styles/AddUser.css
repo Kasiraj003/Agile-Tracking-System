@@ -1,0 +1,67 @@
+/* Styles/AddUser.css */
+.add-user-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-user-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-user-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-input,
+  .form-select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .submit-button,
+  .cancel-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .add-user-container {
+      padding: 10px;
+    }
+  
+    .add-user-title {
+      font-size: 1.8em;
+    }
+  
+    .form-input,
+    .form-select,
+    .submit-button,
+    .cancel-button {
+      padding: 8px;
+      font-size: 0.9em;
+    }
+  }

@@ -1,0 +1,173 @@
+/* Styles/WelcomePage.css */
+.welcome-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .welcome-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .welcome-title {
+    color: #343a40;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    letter-spacing: 1.5px;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .welcome-subtitle {
+    color: #6c757d;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .view-scrums-btn,
+  .details-btn,
+  .back-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-scrums-btn:hover,
+  .details-btn:hover,
+  .back-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .scrum-list-container,
+  .scrum-details-container {
+    margin-top: 30px;
+    text-align: left;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .scrum-title {
+    color: #343a40;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .scrum-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scrum-item {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scrum-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .no-scrums,
+  .no-tasks {
+    color: #dc3545;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  
+  .task-heading {
+    color: #343a40;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-item strong {
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .welcome-container {
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    .welcome-title {
+      font-size: 2em;
+    }
+  
+    .welcome-subtitle {
+      font-size: 1em;
+    }
+  
+    .view-scrums-btn,
+    .details-btn,
+    .back-btn {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+  
+    .scrum-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .details-btn {
+      margin-top: 10px;
+    }
+  }

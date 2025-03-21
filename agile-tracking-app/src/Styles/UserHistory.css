@@ -1,0 +1,70 @@
+/* Styles/UserHistory.css */
+.user-history-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-title,
+.task-description,
+.task-status {
+  margin-bottom: 8px;
+}
+
+.no-tasks {
+  font-style: italic;
+  color: #888;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.back-link:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-history-container {
+    padding: 10px;
+  }
+
+  .history-title {
+    font-size: 1.8em;
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+
+  .back-link {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+}

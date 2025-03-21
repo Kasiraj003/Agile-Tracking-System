@@ -1,0 +1,80 @@
+/* Styles/CreateScrum.css */
+.create-scrum-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-scrum-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 10px;
+}
+
+.cancel-button {
+  background-color: #fa4c4c;
+  color: white;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-items: center;
+  display: center;
+}
+
+.create-scrum-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-input,
+.form-select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-scrum-container {
+    padding: 10px;
+  }
+
+  .create-scrum-title {
+    font-size: 1.8em;
+  }
+
+  .form-input,
+  .form-select,
+  .submit-button,
+  .cancel-button {
+    padding: 8px;
+    font-size: 0.9em;
+  }
+}

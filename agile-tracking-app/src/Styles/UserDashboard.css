@@ -1,0 +1,113 @@
+/* Styles/UserDashboard.css */
+.user-dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .scrum-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scrum-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .details-button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scrum-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .tasks-header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .task-title,
+  .task-description,
+  .task-status,
+  .assigned-user {
+    margin-bottom: 5px;
+  }
+  
+  .no-scrums,
+  .no-tasks {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .back-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-dashboard-container {
+      padding: 10px;
+    }
+  
+    .dashboard-title {
+      font-size: 1.8em;
+    }
+  
+    .scrum-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .details-button {
+      margin-top: 10px;
+    }
+  
+    .back-button {
+      padding: 8px 12px;
+      font-size: 0.9em;
+    }
+  }

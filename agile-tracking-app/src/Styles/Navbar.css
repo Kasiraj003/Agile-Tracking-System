@@ -1,0 +1,116 @@
+/* Styles/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; /* Increased padding for size */
+    background-color: #204467; /* Dark background matching the page */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 1.8em; /* Increased font size for title */
+    font-weight: bold;
+    margin-right: 30px; /* Increased margin */
+    color: #ffffff; /* White text for contrast */
+  }
+  
+  .navbar-link,
+  .navbar-button {
+    margin-left: 20px; /* Increased margin */
+    text-decoration: none;
+    color: #adb5bd; /* Light gray text */
+    padding: 10px 15px; /* Increased padding */
+    border-radius: 8px; /* Rounded corners */
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1em; /* Increased font size */
+  }
+  
+  .navbar-link:hover,
+  .navbar-button:hover {
+    background-color: #3a77b4; /* Slightly lighter background on hover */
+    color: #ffffff;
+  }
+  
+  .navbar-button {
+    background-color: #007bff; /* Blue button for logout */
+    color: white;
+  }
+  
+  .navbar-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .menu-toggle .bar {
+    width: 28px; /* Increased bar width */
+    height: 4px; /* Increased bar height */
+    background-color: #ffffff; /* White bars */
+    margin: 6px 0; /* Increased margin */
+    transition: 0.4s;
+  }
+  
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 8px);
+  }
+  
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -8px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-right {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px; /* Adjusted top position */
+      left: 0;
+      width: 100%;
+      background-color: #343a40; /* Dark background matching the page */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      z-index: 10;
+    }
+  
+    .navbar-right.open {
+      display: flex;
+    }
+  
+    .navbar-link,
+    .navbar-button {
+      margin: 0;
+      width: 100%;
+      text-align: left;
+      padding: 12px 25px; /* Increased padding */
+      border-bottom: 1px solid #495057; /* Darker border */
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
