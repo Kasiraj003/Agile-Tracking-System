@@ -1,0 +1,93 @@
+/* Styles/ScrumDetails.css */
+.scrum-details-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scrum-details-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tasks-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.task-item {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.task-title,
+.task-description,
+.assigned-user,
+.task-status {
+  margin-bottom: 8px;
+}
+
+.current-status {
+  font-style: italic;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.status-select {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.no-tasks {
+  font-style: italic;
+  color: #888;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-link {
+  color: white;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .scrum-details-container {
+    padding: 10px;
+  }
+
+  .scrum-details-title {
+    font-size: 1.8em;
+  }
+
+  .task-item {
+    padding: 10px;
+  }
+
+  .status-select {
+    margin-left: 5px;
+  }
+
+  .back-button {
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+}

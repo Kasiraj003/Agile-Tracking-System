@@ -1,0 +1,77 @@
+/* Navbar.css */
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav a, nav button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  nav a:hover, nav button:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+  }
+  
+  /* WelcomePage.css */
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  h2 {
+    color: #2c3e50;
+  }
+  
+  /* AdminDashboard.css */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    background-color: #ecf0f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  select {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+  /* UserDashboard.css */
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* AdminProfile.css */
+  .profile-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* UserProfile.css */
+  .task-list {
+    padding: 10px;
+    background-color: #dff9fb;
+    border-radius: 8px;
+  }

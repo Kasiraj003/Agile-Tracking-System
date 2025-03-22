@@ -1,0 +1,185 @@
+/* Styles/AdminDashboard.css */
+.admin-dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-scrum-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .add-scrum-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .scrum-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scrum-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .details-button {
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scrum-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .details-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .tasks-header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .task-title,
+  .task-description,
+  .task-status,
+  .assigned-user {
+    margin-bottom: 5px;
+  }
+  
+  .current-status {
+    margin: 0 5px;
+  }
+  
+  .status-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .no-tasks {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .details-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .back-button,
+  .delete-button {
+    display: flex; /* Use flexbox on the buttons */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    min-width: 120px;
+    text-align: center;
+  }
+  
+  .back-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  /* Hover effects */
+  .back-button:hover,
+  .delete-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .back-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Active effects */
+  .back-button:active,
+  .delete-button:active {
+    transform: translateY(1px);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .admin-dashboard-container {
+      padding: 10px;
+    }
+  
+    .dashboard-title {
+      font-size: 1.8em;
+    }
+  
+    .scrum-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .details-button {
+      margin-top: 10px;
+    }
+  
+    .details-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .delete-button {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }

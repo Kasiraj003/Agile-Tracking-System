@@ -1,0 +1,63 @@
+/* Styles/UserProfile.css */
+.user-profile-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-info {
+    margin-bottom: 10px;
+  }
+  
+  .tasks-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .task-title,
+  .task-description,
+  .task-status {
+    margin-bottom: 8px;
+  }
+  
+  .no-tasks,
+  .no-user {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-profile-container {
+      padding: 10px;
+    }
+  
+    .profile-title {
+      font-size: 1.8em;
+    }
+  
+    .task-item {
+      padding: 10px;
+    }
+  }
